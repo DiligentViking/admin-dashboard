@@ -1,6 +1,7 @@
 :root {
-  --blue: rgb(0, 195, 255);
+  --blue: rgb(0, 140, 221);
   --light-gray: rgb(220, 220, 220);
+  --gray: gray;
   --white: white;
 }
 
@@ -17,6 +18,16 @@ ul {
   list-style: none;
 }
 
+h1 {font-size: 30px;}
+h2 {font-size: 18px;}
+h3 {font-size: 16px;}  /* same as normal */
+h4 {font-size: 14px;}
+h5 {font-size: 14px; font-weight: normal;}
+
+p {
+  color: var(--gray);
+}
+
 
 .container {
   display: grid;
@@ -26,6 +37,10 @@ ul {
 
 .sidebar {
   background-color: var(--blue);
+
+  color: var(--white);
+  font-size: 18px;
+  font-weight: bold;
 
   grid-column: 1;
   grid-row: 1 / 3;  /* -1 only works on explicit */
