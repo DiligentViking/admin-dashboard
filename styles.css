@@ -230,8 +230,18 @@ p {
   flex: 1;
 }
 
+.announcements-card h4 {
+  margin-bottom: 4px;
+}
+
 .announcements-card p {
   font-size: 12px;
+}
+
+.announcements-card .divider {
+  background-color: var(--gray);
+  height: 1px;
+  margin: 20px -6px;
 }
 
 .trending-card {
