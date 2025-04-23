@@ -253,7 +253,8 @@ p {
 .trending-card > div {
   margin-bottom: 20px;
   display: grid;
-  grid-template-columns: 62px auto;  /* a 50px image and a 12px margin-right */
+  grid-template-columns: 50px auto;
+  column-gap: 10px;
 }
 
 .trending-card > div > img {
