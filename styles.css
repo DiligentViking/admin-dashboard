@@ -3,7 +3,7 @@
 
 :root {
   --blue: rgb(0, 140, 221);
-  --light-gray: rgb(230, 230, 238);
+  --light-gray: rgb(230, 234, 238);
   --gray: gray;
   --white: white;
   --shadow: 2px 4px 4px rgb(200, 200, 200);  /* hm if i am to make this work i may need to put it on a higher zed index */
@@ -247,8 +247,24 @@ p {
 .trending-card {
   padding: 20px;
   flex: 1;
+  overflow: auto;  /* just for fun */
 }
 
-.trending-card p {
+.trending-card > div {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 62px auto;  /* a 50px image and a 12px margin-right */
+}
+
+.trending-card > div > img {
+  grid-row: 1 / 3;
+}
+
+.trending-card > div > h5 {
+  align-self: self-end;
+  margin-bottom: 4px;
+}
+
+.trending-card > div > p {
   font-size: 14px;
 }
