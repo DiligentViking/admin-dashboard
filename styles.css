@@ -238,10 +238,12 @@ p {
   font-size: 12px;
 }
 
-.announcements-card .divider {
-  background-color: var(--gray);
-  height: 1px;
-  margin: 20px -6px;
+.announcements-card > div + div::before {
+  background-color: var(--light-gray);  /* lighter than the text */
+  content: '';  /* you have to have this content */
+  display: block;  /* and a display of block so you can have width/height */
+  height: 1px;  /* the width of block-elements automatically stretch */
+  margin: 20px -6px;  /* top/bottom 20px space, and stretched an extra 6px to left and right */
 }
 
 .trending-card {
